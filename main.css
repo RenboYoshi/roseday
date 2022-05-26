@@ -406,3 +406,6 @@ h1::before {
   color: hsl(0 0 0 / 0.7);
 }
 
+a {
+    color: var(--text-color);
+}
