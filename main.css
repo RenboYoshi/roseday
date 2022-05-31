@@ -1,3 +1,4 @@
+/* Google Font Import - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 *{
     margin: 0;
@@ -14,6 +15,8 @@
     --primary-color-light: #F6F5FF;
     --toggle-color: #DDD;
     --text-color: #707070;
+    --typewriterSpeed: 2s;
+    --typewriterCharacters: 30;
 
     /* ====== Transition ====== */
     --tran-03: all 0.2s ease;
@@ -22,14 +25,11 @@
     --tran-05: all 0.3s ease;
 }
 
-html{
-    background-color: var(--body-color);
-}
-
 body{
     min-height: 100vh;
     background-color: var(--body-color);
     transition: var(--tran-05);
+    text-align: center;
 }
 
 ::selection{
@@ -169,6 +169,25 @@ body.dark .sidebar header .toggle{
     margin-top: 40px;
 }
 
+.sidebar li.search-box{
+    border-radius: 6px;
+    background-color: var(--primary-color-light);
+    cursor: pointer;
+    transition: var(--tran-05);
+}
+
+.sidebar li.search-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: var(--primary-color-light);
+    color: var(--text-color);
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: 500;
+    transition: var(--tran-05);
+}
 .sidebar li a{
     list-style: none;
     height: 100%;
@@ -288,28 +307,10 @@ body.dark .switch::before{
     height: 100vh;
     width: calc(100% - 78px);
 }
-body.dark .home .text p{
+body.dark .home .text{
     color: var(--text-color);
 }
 
-
-
-
-:root {
-  --bg-color: hsl(49 37% 94%);
-  --typewriterSpeed: 2s;
-  --typewriterCharacters: 30;
-}
-
-body {
-  margin: 0;
-  font-family: "Source Sans Pro", sans-serif;
-  min-height: 100vh;
-  display: grid;
-  place-content: center;
-  text-align: center;
-  background: var(--bg-color);
-}
 
 @media (min-width: 300px) {
     h1 {
@@ -319,7 +320,6 @@ body {
       position: relative;
     }
     .subtitle {
-        color: hsl(0 0% 0% / 0.7);
         font-size: 0.7rem;
         font-weight: 400;
         opacity: 0;
@@ -337,7 +337,6 @@ body {
       width: max-content;
     }
     .subtitle {
-        color: hsl(0 0% 0% / 0.7);
         font-size: 1.2rem;
         font-weight: 400;
         opacity: 0;
@@ -356,7 +355,6 @@ h1 {
   width: max-content;
 }
 .subtitle {
-    color: hsl(0 0% 0% / 0.7);
     font-size: 2rem;
     font-weight: 400;
     opacity: 0;
@@ -373,39 +371,31 @@ h1::after {
   bottom: 0;
   left: 0;
 }
-
 h1::before {
-  background: var(--body-color);
-  animation: typewriter var(--typewriterSpeed)
-    steps(var(--typewriterCharacters)) 1s forwards;
-}
-
-@keyframes typewriter {
-  to {
-    left: 100%;
+    background: var(--body-color);
+    animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards;
   }
-}
-
-@keyframes blink {
-  to {
-    background: transparent;
+  
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
   }
-}
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  
+  @keyframes blink {
+    to {
+      background: transparent;
+    }
   }
-}
-
-#yt-link {
-  position: absolute;
-  bottom: 2em;
-  width: 100%;
-  color: hsl(0 0 0 / 0.7);
-}
-
-a {
-    color: var(--text-color);
-}
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  a {
+      color: var(--text-color);
+  }
