@@ -33,7 +33,6 @@ body{
     min-height: 100vh;
     background-color: var(--body-color);
     transition: var(--tran-05);
-    text-align: center;
 }
 
 ::selection{
@@ -294,12 +293,11 @@ body.dark .switch::before{
 }
 
 .home{
-    position: absolute;
+    position: flex;
     top: 0;
     top: 0;
-    left: 250px;
-    height: 100vh;
-    width: calc(100% - 250px);
+    align-items: center;
+    text-align: center;
     background-color: var(--body-color);
     transition: var(--tran-05);
 }
@@ -311,9 +309,10 @@ body.dark .switch::before{
 }
 
 .sidebar.close ~ .home{
-    left: 78px;
+    align-items: center;
+    text-align: center;
     height: 100vh;
-    width: calc(100% - 78px);
+    width: calc(center);
 }
 body.dark .home .text{
     color: var(--text-color);
@@ -432,8 +431,7 @@ h1::before {
     max-width: 750px;
     background: var(--container-color);
     border-radius: 12px;
-    margin-left: 27.5%;
-    justify-content: space-between;
+      justify-content: space-between;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
     position: relative;
   }
