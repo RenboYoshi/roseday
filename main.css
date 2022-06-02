@@ -293,11 +293,12 @@ body.dark .switch::before{
 }
 
 .home{
-    position: relative;
+    position: absolute;
     top: 0;
     top: 0;
-    align-items: center;
-    text-align: center;
+    left: 250px;
+    height: 100vh;
+    width: calc(100% - 250px);
     background-color: var(--body-color);
     transition: var(--tran-05);
 }
@@ -309,15 +310,13 @@ body.dark .switch::before{
 }
 
 .sidebar.close ~ .home{
-    align-items: center;
-    text-align: center;
+    left: 78px;
     height: 100vh;
-    width: calc(center);
+    width: calc(100% - 78px);
 }
 body.dark .home .text{
     color: var(--text-color);
 }
-
 
 @media (min-width: 300px) {
     h1 {
