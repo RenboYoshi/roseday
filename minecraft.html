@@ -78,40 +78,39 @@
             <br><a href="https://discord.gg/SJPrXnees5" target="_blank"><i class='bx bxl-discord icon'></i></a>
             <a href="https://github.com/RenboYoshy" target="_blank"><i class='bx bxl-github icon'></i></a>
             <br><br><br><br><h1>Plugins, Mods, Build</h1></div>
-            <br><br> <div class="text"> <div class="container">
-                <div class="box one">
-                  <div class="details">
-                    <div class="topic">Description</div>
-                    <p style="color: var(--text-color)">Le Aimskill est un mode d'entraînement pour améliorer son temps de réaction en cliquant sur le plus de blocs possible, ces blocs apparaîtront autour de vous pendant une minute, à la fin du temps imparti vous recevrez des coins qui vous permettront de débloquer des nouveaux types de blocs à taper.</p>
-                  </div>
-                  <br><br>
-                  <div class="button1">
-                    <a href="Indisponible.html"><button>Code Source</button></a>
-                  </div>
-                </div>
-                <div class="box two">
-                  <div class="image-box">
-                    <div class="image">
-                    </div>
-                    <div class="info">
-            
-                      <div class="name">Aimskill</div>
-                      <div class="button2">
-                        <a href="Indisponible.html"><button>Télécharger</button></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div></p></center></div>
-    </section>
-
+            <br><br>
+              <center>
+    <div class="container">
+      <div class="box">
+      <div class="image">
+         <img src="image/aimskill.webp">
+        </div>
+        <div class="name_job">Aimskill</div>
+        <p>Le Aimskill est un mode d'entraînement pour améliorer son temps de réaction en cliquant sur le plus de blocs possible, ces blocs apparaîtront autour de vous pendant une minute, à la fin du temps imparti vous recevrez des coins qui vous permettront de débloquer des nouveaux types de blocs à taper.</p>
+        <div class="btns">
+          <a href="Indisponible.html"><button>Télécharger</button></a>&emsp;
+          <a href="Indisponible.html"><button>Code Source</button></a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+        <img src="image/customnpc.webp" alt="">
+        </div>
+        <div class="name_job">CustomNPC</div>
+        <p> Le CustomNPC est un plugin qui sert à créer et personnaliser les NPC pour votre serveur. Vous pouvez customiser le nom, le skin et même exécuter une commande lorsque vous cliquez sur celui-ci.<br><br><br><br> </p>
+        <div class="btns">
+          <a href="download/CustomNPC.jar" target="_blank"><button>Télécharger</button></a> &emsp;
+          <a href="https://github.com/RenboYoshy/CustomNpc-Plugin" target="_blank"><button>Code Source</button></a>
+        </div>
+      </div>
+    </div>
+  </center>
     <script>
         const body = document.querySelector('body'),
+      container = body.querySelector('.container .box'),
+      text = body.querySelector('p'),
       sidebar = body.querySelector('nav'),
       toggle = body.querySelector(".toggle"),
-      button1 = body.querySelector(".button1"),
-      container = body.querySelector(".container"),
-      containerbefore = body.querySelector(".container::before"),
       modeSwitch = body.querySelector(".toggle-switch"),
       modeText = body.querySelector(".mode-text");
 toggle.addEventListener("click" , () =>{
